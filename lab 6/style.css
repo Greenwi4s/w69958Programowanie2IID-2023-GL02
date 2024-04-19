@@ -1,0 +1,23 @@
+.przycisk {
+    background-color: #ccc;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.przycisk:hover {
+    background-color: #bbb;
+}
+#zmin{
+    opacity: 1;
+    transition: all ease 1s;
+}
+#zmin.active{
+    opacity: 0;
+
+}
+.przycisk-aktywny {
+    background-color: #007bff;
+    color: white;
+}
