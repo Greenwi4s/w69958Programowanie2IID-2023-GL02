@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz rejestracyjny</title>
+    <script defer src="script.js"></script>
+    <link href="style.css">
+
+</head>
+<body>
+    <h1>Formularz rejestracyjny</h1>
+
+    <form id="formularz">
+        <label for="imie">Imię:</label>
+        <input type="text" id="imie" name="imie" required>
+        <div class="error"></div>
+
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" id="nazwisko" name="nazwisko" required>
+        <div class="error"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error"></div>
+
+        <label for="haslo">Hasło (min. 8 znaków):</label>
+        <input type="password" id="haslo" name="haslo" required minlength="8">
+        <div class="error"></div>
+
+        <label for="plec">Płeć:</label>
+        <select id="plec" name="plec" required>
+            <option value="">Wybierz</option>
+            <option value="m">Mężczyzna</option>
+            <option value="k">Kobieta</option>
+        </select>
+        <div class="error"></div>
+
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required>
+        <div class="error"></div>
+
+        <label for="dataUrodzenia">Data urodzenia:</label>
+        <input type="date" id="dataUrodzenia" name="dataUrodzenia" required>
+        <span id="urderror"></span>
+        <div class="error" id="dataUrodzeniaBlad"></div>
+        <label for="kraj">Kraj:</label>
+        <select id="kraj" name="kraj" required>
+        <option value="">Wybierz kraj</option>
+        <option value="PL">Polska</option>
+        <option value="UA">Ukraina</option>
+        <option value="FR">Francja</option>
+        <option value="GB">Wielka Brytania</option>
+        <option value="US">Stany Zjednoczone</option>
+        </select>
+        <div class="error"></div>
+
+        <input type="submit" value="Zapisz">
+    </form>
+
+</body>
+</html>
